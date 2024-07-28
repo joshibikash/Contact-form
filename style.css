@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(148, 38%, 91%);
+}
+
+.main-container {
+  background-color: white;
+  max-width: 600px;
+  padding: 30px;
+  margin: 100px auto;
+  border-radius: 20px;
+ 
+}
+
+.form-header{
+  margin-bottom: 20px;
+}
+
+.name-container label, .email-container label , .text-container label{
+  display:block;
+  color:gray;
+  font-size: 13px;
+  margin: 8px 0;
+}
+
+.name-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 8px 12px;
+  
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.radio-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+.query-radio-container p {
+  color: grey;
+  font-size: 13px;
+  margin: 10px 0;
+
+}
+
+.radio-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.query-radio-container .general-radio, .query-radio-container .support-radio {
+  padding: 10px 8px;
+  border: 1px solid gray;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 15px;
+  color: grey;
+  
+}
+
+textarea{
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.concent-container {
+  margin: 8px 0;
+}
+
+input[type=submit] {
+  width: 100%;
+  padding: 8px 0;
+  margin: 10px 0;
+  border: none;
+  background-color: hsl(169, 82%, 27%);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 450px) {
+  .main-container {
+    width: 90%;
+  }
+
+  .name-container, .radio-button {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+

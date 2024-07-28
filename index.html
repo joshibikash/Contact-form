@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="main-container">
+    <section class="form-header">
+      <h1>Contact Us</h1>
+    </section>
+    <section class="form-container">
+      <form action="#">
+        <section class="name-container">
+          <section class="f-name">
+            <label for="firs-name">
+              First Name <sup>*</sup>
+            </label>
+            <input type="text" id="first-name" name="first-name" required>
+          </section>
+          <section class="l-name">
+            <label for="last-name">
+              Last Name <sup>*</sup>
+            </label>
+            <input type="text" id="last-name" name="last-name" required>
+          </section>
+         
+         
+        </section>
+
+        <section class="email-container">
+          <label for="email">Email Address <sup>*</sup></label>
+          <input type="email" id="email" name="email" required>
+        </section>
+
+        <section class="query-radio-container">
+          <p>Query Type <sup>*</sup></p>
+          <section class="radio-button">
+            <section class="general-radio">
+              <label for="general-query">
+                <input type="radio" name="query" id="general-query" value="general-query" required> General Query
+              </label>
+            </section>
+            <section class="support-radio">
+              <label for="support-query">
+                <input type="radio" name="query" id="support-query" value="support-query" required> Support Request
+              </label>
+            </section>
+           
+          </section>
+         
+        </section>
+
+        <section class="text-container">
+          <label for="messege">Messege <sup>*</sup></label>
+          <textarea name="messege" id="messege" rows="5" cols="50" required></textarea>
+        </section>
+
+        <section class="concent-container">
+          <label for="concent">
+            <input type="checkbox" name="concent" id="concent" required> I concent to being contacted by the team.
+          </label>
+        </section>
+
+        <section class="submit-container">
+          <label for="submit">
+            <input type="submit" value="Submit" id="submit" onclick="formSubmit();">
+          </label>
+        </section>
+      </form>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
